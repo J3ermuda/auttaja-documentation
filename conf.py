@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Auttaja Documentation documentation build configuration file, created by
-# sphinx-quickstart on Tue Nov 14 21:08:18 2017.
+# Auttaja documentation build configuration file, created by
+# sphinx-quickstart on Tue Nov 14 21:16:32 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Auttaja Documentation'
+project = u'Auttaja'
 copyright = u'2017, Jacob Wiltse'
 author = u'Jacob Wiltse'
 
@@ -199,7 +199,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'AuttajaDocumentationdoc'
+htmlhelp_basename = 'Auttajadoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -221,7 +221,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'AuttajaDocumentation.tex', u'Auttaja Documentation Documentation',
+    (master_doc, 'Auttaja.tex', u'Auttaja Documentation',
      u'Jacob Wiltse', 'manual'),
 ]
 
@@ -251,7 +251,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'auttajadocumentation', u'Auttaja Documentation Documentation',
+    (master_doc, 'auttaja', u'Auttaja Documentation',
      [author], 1)
 ]
 
@@ -265,8 +265,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'AuttajaDocumentation', u'Auttaja Documentation Documentation',
-     author, 'AuttajaDocumentation', 'One line description of project.',
+    (master_doc, 'Auttaja', u'Auttaja Documentation',
+     author, 'Auttaja', 'One line description of project.',
      'Miscellaneous'),
 ]
 
