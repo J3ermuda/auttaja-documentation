@@ -17,9 +17,7 @@ Contents:
    commands
 
 
-Indices and tables
-==================
+Search
+======
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
