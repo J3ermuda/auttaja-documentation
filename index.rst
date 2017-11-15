@@ -14,7 +14,7 @@ Contents:
    :maxdepth: 2
 
    getting-started
-
+   commands
 
 
 Indices and tables
