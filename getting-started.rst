@@ -9,7 +9,7 @@ This document will cover setting up the bot one feature at a time.  So if we hit
 The Basics
 ==========
 
-Let's start by covering some basics.
+Let's start by covering some basics.  First, you need to have Auttaja in your server, if you haven't already added it you can do so by `clicking here <https://discordapp.com/oauth2/authorize?client_id=242730576195354624&scope=bot&permissions=1576270967>`_
 
 Permissions
 -----------
