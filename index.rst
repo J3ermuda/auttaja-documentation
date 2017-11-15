@@ -6,6 +6,8 @@
 Welcome to Auttaja's documentation!
 ===================================
 
+If you need help with anything not covered in these docs, head over to the `Auttaja Discord server <https://discordapp.com/invite/7AN2a4>`_
+
 Contents:
 
 .. toctree::
