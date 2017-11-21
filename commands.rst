@@ -258,6 +258,92 @@ Returns a text file containing the specified amount of deleted messages
   deleted.logs 50
   deleted.logs 1000
 
+Gatekeeper
+==========
+
+Commands for controlling and configuring Gatekeeper, contains both verification and -agree functionality
+
+Enable
+------
+
+Enable Gatekeeper
+
+.. code::
+
+  gatekeeper.enable
+
+Disable
+-------
+
+Disable Gatekeeper
+
+.. code::
+
+  gatekeeper.disable
+
+Toggle Mode
+-----------
+
+Toggles gatekeeper between agree and verification mode
+
+.. code::
+
+  gatekeeper.togglemode
+
+Set Member Role
+---------------
+
+Sets a role for Gatekeeper to assign to users that pass verification
+
+.. code::
+
+  gatekeeper.memberrole Verified
+
+Set Guest Channel
+-----------------
+
+Allows you to set a guest channel to use instead of the one Auttaja creates.
+
+.. code::
+
+  gatekeeper.channel #guests
+
+Set Welcome Message
+-------------------
+
+Sets a welcome message to be displayed after a user completes gatekeeper verification, requires the welcome channel to be set (see below).  #user# will be converted to a tag of the user, and #server# will be converted to your servers name.
+
+.. code::
+
+  gatekeeper.welcomemessage Hey #user#, welcome to #server#, please follow the rules.
+
+Set Welcome Channel
+-------------------
+
+Sets the channel to print welcome messages to.
+
+.. code::
+
+  gatekeeper.welcomechannel #general
+
+Agree
+-----
+
+Used only when Gatekeeper is in agree mode.  Causes the user to pass Gatekeeper.
+
+.. code::
+
+  gatekeeper.agree
+
+Verify
+------
+
+Used only when Gatekeeper is in verify mode.  Auttaja grants the user a new verification link.
+
+.. code::
+
+  gatekeeper.verify
+
 Logging
 =======
 
