@@ -419,6 +419,24 @@ Unmutes the given member by removing the spammer role and returning their previo
   mod.unmute Tom#0131
   mod.unmute 188092131376758784
 
+Pin
+---
+
+Pins the given message to the current channel
+
+.. code::
+
+  mod.pin 382377051191115777
+
+Unpin
+-----
+
+Unpins the given message from the current channel
+
+.. code::
+
+  mod.unpin 382377051191115777
+
 Nicknames
 =========
 
@@ -503,7 +521,7 @@ Call
 Calls a vote
 
 .. code::
-  
+
   vote.call
 
 End
