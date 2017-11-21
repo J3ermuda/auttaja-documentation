@@ -281,6 +281,15 @@ Sets the channel the Auttaja logs to
 
   logging.setchannel #logging
 
+Toggle Command Auditing
+-----------------------
+
+Toggles whether or not commands run will be logged to the log channel
+
+.. code::
+
+  logging.togglecmdaudit
+
 Moderation
 ==========
 
