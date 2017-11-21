@@ -99,7 +99,7 @@ Disables anti-shortener
 Anti-Spam
 =========
 
-The anti-shortner plugin is used to detect and remove spam.  Users who spam are muted for an hour, but can be unmuted sooner using `mod.unmute`.
+The anti-spam plugin is used to detect and remove spam.  Users who spam are muted for an hour, but can be unmuted sooner using `mod.unmute`.
 
 Enable
 ------
