@@ -258,6 +258,38 @@ Returns a text file containing the specified amount of deleted messages
   deleted.logs 50
   deleted.logs 1000
 
+Filters
+=======
+
+The filters plugin allows you to manage regular expression chat filters.
+
+Add
+---
+
+Adds a regex filter to be applied to all messages on the servers
+
+.. code::
+
+  filter.add nigg[A-Za-z]*
+
+Remove
+------
+
+Removes a regex filter by ID, you can find the ID's in the list command
+
+.. code::
+
+  filter.remove 56
+
+List
+----
+
+List all current filters in the server
+
+.. code::
+
+  filter.list
+
 Gatekeeper
 ==========
 
