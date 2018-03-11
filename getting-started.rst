@@ -56,7 +56,7 @@ Auttaja also has the ability to allow your moderators to verify every nickname c
 Check out the "Nick Requests" part of the `-setup` command.
 
 Automod
-======
+=======
 
 Auttaja has a collection of auto-moderation features that are all part of the automod part of the `-setup` command.
 
