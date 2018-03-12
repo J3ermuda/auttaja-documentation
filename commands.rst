@@ -11,6 +11,20 @@ Allows you to unjustify a strike that the user who recieved the strike thinks th
 
 ``-appeal <strike ID>``
 
+Add Channel
+========
+
+Adds a channel which Auttaja will clean.
+
+``-addchannel <channel id>``
+
+Remove Channel
+========
+
+Removes channel which Auttaja will clean.
+
+``-rmcchannel <channel id>``
+
 Set Prefix
 ========
 
