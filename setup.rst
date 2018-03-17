@@ -80,14 +80,59 @@ This allows you to set a mode on gatekeeper that the user has to go through befo
   
 **Toggle Welcome**
 
-*Toggles welcome messages*
+Toggles welcome messages.
 
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_welcome_mode.png
   :height: 10px
   
 **Welcome Mode**
 
-*Sets the welcome between Text, or Images*
+Sets the welcome between Text, or Images.
 
 **Text Example:**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_text.png
+  :height: 10px
+  
+**Image Example**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_image.png
+  :height: 10px
+  
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_welcome_message.png
+  :height: 10px
+  
+**Welcome Messages**
+  
+Sets a message for welcome messages *Like, Welcome User! No Swearing on my good christan server k? else I report you to discord*
+  
+To set the username of the welcome message, add *{user}* to have their username in the welcome message.
+  
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_welcome_channel.png
+  :height: 10px
+  
+**Welcome Channel**
+
+Sets the channel for welcome messages.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_toggle_leave.png
+  :height: 10px
+  
+**Toggle Leave**
+
+Toggles leave messages.
+  
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_leave_message.png
+  :height: 10px
+  
+**Leave Message**
+
+Sets a message for leave messages *Like, Goodbye User! We never liked you anyways.*
+
+To set the username of the welcome message, add *{user}* to have their username in the welcome message.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_leave_channel.png
+  :height: 10px
+  
+Sets the channel for leave messages
 
