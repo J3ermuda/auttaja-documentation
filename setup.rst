@@ -138,3 +138,12 @@ To set the username of the welcome message, add *{user}* to have their username 
 
 Sets the channel for leave messages.
 
+------
+Appeal
+------
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/appeal/a_for_automod.png
+  :height: 10px
+
+Appeal allows you to justify your strike in which you should have it or not.
+
