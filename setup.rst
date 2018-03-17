@@ -43,14 +43,51 @@ This allows you to set a mode on gatekeeper that the user has to go through befo
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_mode_options.png
   :height: 10px
   
- **0 = Agree**
- 
+0 = Agree
+
+1 = Verification
+
+2 = Approval
+
+**Agree**
+
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_agree.png
   :height: 10px
- 
- *Allows the user to type `-agree` to be let into the server*
- 
- **1 = Verification** - *Prompts a user to complete a captcha authorization to be let into the server*
- 
- 
- **2 = Approval** - *A user needs to be approved by a staff member before being let into the server*
+  
+*Agree allows the user to type* ``-agree`` *to be let into the server.*
+
+**Verification**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_verification.png
+  :height: 10px
+  
+*Verification prompts the user to go through a captcha process before being let into the server*
+
+**Example of captcha process**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_captcha_web.png
+  :height: 10px
+
+**Approval**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_approval.png
+  :height: 10px
+  
+*Approval allows the user to wait paitently until a moderator grants them access into the server*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_toggle_welcome.png
+  :height: 10px
+  
+**Toggle Welcome**
+
+*Toggles welcome messages*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_welcome_mode.png
+  :height: 10px
+  
+**Welcome Mode**
+
+*Sets the welcome between Text, or Images*
+
+**Text Example:**
+
