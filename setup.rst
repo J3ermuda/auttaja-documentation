@@ -134,5 +134,7 @@ To set the username of the welcome message, add *{user}* to have their username 
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/gatekeeper-images/gatekeeper_leave_channel.png
   :height: 10px
   
-Sets the channel for leave messages
+**Leave Channel**  
+
+Sets the channel for leave messages.
 
