@@ -147,3 +147,17 @@ Appeal
 
 Appeal allows you to justify your strike in which you should have it or not.
 
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/appeal/appeal_toggle.png
+  :height: 10px
+
+**Toggle Appeal**
+
+Toggles the option for users to justify their strike.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/appeal/appeal_channel.png
+  :height: 10px
+  
+**Appeal Channel**
+
+Sets the channel for users to appeal in.
+
