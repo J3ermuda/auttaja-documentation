@@ -142,7 +142,7 @@ Sets the channel for leave messages.
 Appeal
 ------
 
-.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/appeal/a_for_automod.png
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/appeal/p_for_appeal.png
   :height: 10px
 
 Appeal allows you to justify your strike in which you should have it or not.
