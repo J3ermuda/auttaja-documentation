@@ -194,3 +194,67 @@ This plugin allows the bot to delete messages when someone sends a certain amoun
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/anti-spam.gif
   :height: 10px
   
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_antizalgo.png
+  :height: 10px
+  
+**Anti Zalgo Plugin**
+
+This plugin allows the bot to delete any messages containing zalgo in it.
+
+**Example:**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/anti-zalgo.gif
+  :height: 10px
+  
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_antiraid.png
+  :height: 10px
+  
+**Anti Raid Plugin**
+
+This plugins allows the bot to detect if raiders are joining the server, and if detected, they are muted.
+
+**Example:**
+
+*If 3 or more users join within a 5 second period, they are muted by the bot*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_antishortner.png
+  :height: 10px
+  
+**Anti Shortner Plugin**
+
+This plugin allows the bot to detect URL shortners.
+
+**Example:**
+
+*goo.gl, bit.ly, adf.ly, tinyurl.com, and more*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_antibadlink.png
+  :height: 10px
+  
+**Bad Link Protection Plugin**
+
+This plugin allows the bot to detect unsafe links that might be backdoors.
+
+**Example:**
+
+*grabify.link*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_spammer_role.png
+  :height: 10px
+  
+**Setting Spammer Role**
+
+This allows you to set the muted, or spammer role to a different role.
+
+*The default is Spammer, but you can change it by putting in the name, or the role ID of the role*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_bypass.png
+  :height: 10px
+  
+**Bypass Role**
+
+This sets the Auttaja Bypass role where once you have this role, you can bypass all plugins, and moderation commands
+
+*The default is Auttaja Bypass, but you can change it by putting in the name, or the role ID of the role*
+
+
