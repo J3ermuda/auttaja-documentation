@@ -187,7 +187,7 @@ This plugin allows the bot to delete messages containg advertisements from disco
   
 **Anti Spam Plugin**
 
-This plugin allows the bot to delete messages when someone sends a certain amount of messages within a certain amount of seconds.
+This plugin allows the bot to delete messages when someone sends a certain amount of messages within a certain amount of seconds. Once deleted, it will give a Spammer role to the person who spammed.
 
 **Example:**
 
