@@ -161,3 +161,36 @@ Toggles the option for users to justify their strike.
 
 Sets the channel for users to appeal in.
 
+------
+Automod
+------
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/appeal/a_for_automod.png
+  :height: 10px
+  
+Automod allows you to setup Auttaja's plugins.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/autmod_antiadvert.png
+  :height: 10px
+  
+**Anti Advertisement Plugin**
+
+This plugin allows the bot to delete messages containg advertisements from discord.gg, .io, .me, .li, and more.
+
+**Example:**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/anti-advert.gif
+  :height: 10px
+  
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_antispam.png
+  :height: 10px
+  
+**Anti Spam Plugin**
+
+This plugin allows the bot to delete messages when someone sends a certain amount of messages within a certain amount of seconds.
+
+**Example:**
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/anti-spam.gif
+  :height: 10px
+  
