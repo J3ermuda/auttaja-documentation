@@ -332,6 +332,10 @@ General
   :height: 10px
   
 These are some general settings that you can use with Auttaja.
-.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/general/e_for_general.png
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/general/general_prefix.png
   :height: 10px
-  
+
+**Set Prefix**
+
+This allows you to change the prefix to whatever you desire.
