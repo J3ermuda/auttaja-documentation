@@ -257,4 +257,46 @@ This sets the Auttaja Bypass role where once you have this role, you can bypass 
 
 *The default is Auttaja Bypass, but you can change it by putting in the name, or the role ID of the role*
 
+------
+Logging
+------
 
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/l_for_logging.png
+  :height: 10px
+  
+Logging in Auttaja allows you to log all punishments, joins/leaves, and messages detected by any of our moderation features, as well as audit logs of all Auttaja commands run.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_toggle.png
+  :height: 10px
+  
+**Toggle Logging**
+
+Toggles basic logging, *such as punishments, joins/leaves, and any messages detected by the automod feature.*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_channel.png
+  :height: 10px
+  
+**Logging Channel**
+
+Sets the channel of where to log everything.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_joinchannel.png
+  :height: 10px
+  
+**Join Channel**
+
+Sets the channel of where to log join messages.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_audit.png
+  :height: 10px
+  
+**Audit Commands**
+
+Toggles audit commands where it will log every command typed by a user.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_join_leave_messages.png
+  :height: 10px
+  
+**Join/Leave Message Logging**
+
+Logs whether someone joins and/or leaves.
