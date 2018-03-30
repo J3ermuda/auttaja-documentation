@@ -300,3 +300,38 @@ Toggles audit commands where it will log every command typed by a user.
 **Join/Leave Message Logging**
 
 Logs whether someone joins and/or leaves.
+
+------
+Nick Change Requests
+------
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/nick/n_for_nick_requests.png
+  :height: 10px
+  
+Nick Change Requests allow users to request to change their nicknames to something else, but they need to await approval from a moderator before the nickname is changed.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/nick/nick_toggle.png
+  :height: 10px
+  
+**Toggle Nick Requests**
+
+This toggles the option for nick requests.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/nick/nick_channel.png
+  :height: 10px
+  
+**Nick Requests Channel**
+
+Sets the channel for nick requests.
+
+------
+General
+------
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/general/e_for_general.png
+  :height: 10px
+  
+These are some general settings that you can use with Auttaja.
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/general/e_for_general.png
+  :height: 10px
+  
