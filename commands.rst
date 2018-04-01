@@ -53,6 +53,41 @@ Enters a configuration mode to setup Auttaja's plugins, and options
 
 ``-setup``
 
+Set Assignable Role
+========
+
+Allows you to set a role that users can self-assign.
+
+``-setassignablerole role``
+
+Remove Assignable Role
+========
+
+Allows you to delete a role you previously allowed users to self-assign
+
+``-removeassignablerole role``
+
+Assign Role
+========
+
+Allows you to self-assign a role that has previously been set as self-assignable.
+
+``-assignrole role``
+
+Enable Command
+========
+
+Allows you to enable a previously disabled command.
+
+``-enablecmd cmd``
+
+Disable Command
+========
+
+Allows you to disable a command.
+
+``-disablecmd cmd``
+
 Add Command
 ========
 
@@ -115,6 +150,20 @@ Local Time
 Returns the local time in a city.
 
 ``-localtime <city/post(zip) code>``
+
+AFK
+========
+
+Allows you to toggle being AFK.
+
+``-afk``
+
+Embed
+========
+
+Allows you to create a custom embed.
+
+``-embed``
 
 Agree
 ========
@@ -185,6 +234,13 @@ Server Info
 Lists information about the current Discord server.
 
 ``-serverinfo``
+
+Announce
+========
+
+Sends message to the announcements channel
+
+``-announce <message>``
 
 Ban
 ========
@@ -373,4 +429,4 @@ End Vote
 
 Ends a vote.
 
-``-endvote <channel>``
+``-endvote <results channel> | [message id]``
