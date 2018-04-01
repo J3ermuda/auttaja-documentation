@@ -2,674 +2,375 @@
 Commands
 ########
 
-Below you will find a listing of all of Auttaja's plugins and commands, a brief description of what they do, and some example syntax.
+Below you will find a listing of all of Auttaja's commands, a brief description of what they do, and an example of each command.
 
-Anti-advert
-===========
-
-The anti-advert plugin is used to detect and remove messages containing advertisments for other Discord servers.  It includes official Discord links, as well as many of the popular invite link shorteners.
-
-Enable
-------
-
-Enables anti-advert
-
-.. code::
-
-  antiadvert.enable
-
-Disable
--------
-
-Disables anti-advert
-
-.. code::
-
-  antiadvert.disable
-
-Anti-grabify
-============
-
-The anti-grabify plugin is used to detect and remove messages containing IP grabber links somewhere in the redirect chain.
-
-Enable
-------
-
-Enables anti-grabify
-
-.. code::
-
-  antigrabify.enable
-
-Disable
--------
-
-Disables anti-grabify
-
-.. code::
-
-  antigrabify.disable
-
-Anti-IP
-=======
-
-The anti-IP plugin is used to detect and remove messages containing publicly routable IP addresses.  The idea is to prevent personal army DDoS requests.
-
-Enable
-------
-
-Enables anti-IP
-
-.. code::
-
-  antiip.enable
-
-Disable
--------
-
-Disables anti-IP
-
-.. code::
-
-  antiip.disable
-
-Anti-Shortener
-==============
-
-The anti-shortner plugin is used to detect and remove messages containing URL shorteners.
-
-Enable
-------
-
-Enables anti-shortener
-
-.. code::
-
-  antishortener.enable
-
-Disable
--------
-
-Disables anti-shortener
-
-.. code::
-
-  antishortener.disable
-
-Anti-Spam
+Appeal
 =========
 
-The anti-spam plugin is used to detect and remove spam.  Users who spam are muted for an hour, but can be unmuted sooner using `mod.unmute`.
+Allows you to unjustify a strike that the user who recieved the strike thinks that the strike shall not have been given to them.
 
-Enable
-------
+``-appeal <strike ID>``
 
-Enables anti-spam
+Add Channel
+========
 
-.. code::
+Adds a channel which Auttaja will clean.
 
-  antispam.enable
+``-addchannel <channel id>``
 
-Disable
--------
+Remove Channel
+========
 
-Disables anti-spam
+Removes channel which Auttaja will clean.
 
-.. code::
+``-rmcchannel <channel id>``
 
-  antispam.disable
+Set Prefix
+========
 
-Auttaja
-=======
+Allows you to change the bot's prefix to whatever prefix you desire for the current guild.
 
-The Auttaja plugin contains a lot of informational commands about the bot as well as commands that allow you to manipulate how the bot works at a low level.
+``-setprefix <prefixhere>``
 
-Help
-----
+Dump Config
+========
 
-Displays a listing of all of the plugins, and allows you to list all of the commands in each plugin that you have access to.
+Allows you to get a JSON config file in which you can edit and reupload for the current guild.
 
-.. code::
+``-dumpconfig``
 
-  auttaja.help
-  auttaja.help gatekeeper
+Load Config
+========
 
-SetInvite
----------
+Loads a modified JSON config file when this command is put into the description of uploading the config file to Discord.
 
-Sets your servers invite code for Auttaja's own Discord invite shortener.  Once you set the invite code you can access your server at https://auttaja.io/invitecode
+``-loadconfig``
 
-.. code::
+Setup
+========
 
-  auttaja.setinvite myawesomeserver
-  auttaja.setinvite lol
+Enters a configuration mode to setup Auttaja's plugins, and options
 
-Invite
-------
+``-setup``
 
-Returns an invite link for Auttaja
+Add Command
+========
 
-.. code::
+Adds a custom command with a response and help message.
 
-  auttaja.invite
+``-addcommand <command> <response> | <help message>``
 
-Ping
-----
+Remove Command
+========
 
-Tests and displays the time it takes for the message you send to get to the bot for processing
+Removes the custom command that you created.
 
-.. code::
+``-rmcommand <command>``
 
-  auttaja.ping
+List Commands
+========
 
-Profile
--------
+Lists all possible custom commands that the user has created for the guild.
 
-Displays information about the person calling the command, or a tagged member.  Shows information like Username, User ID, Status, Discriminator, Rank, Playing status, Created date, and Join date
+``-listcommands``
 
-.. code::
+Add Filter
+========
 
-  auttaja.profile
-  auttaja.profile @otheruser
-  auttaja.profile 242730576195354624
-  auttaja.profile Kelwing#3658
+Adds a regex filter to the bot where once the regex is typed, that message will be deleted.
 
-Server Info
------------
+``-addfilter <regex>``
 
-Displays information about the Discord server the command is run in.
+Remove Filter
+========
 
-.. code::
+Removes the regex filter from the bot
 
-  auttaja.serverinfo
+``-removefilter <id>``
 
-Server Count
-------------
+List Filters
+========
 
-Displays the current amount of shards and the number of servers each shard is in.
+Lists all the regex filters in the current guild.
 
-.. code::
+``-listfilters``
 
-  auttaja.servercount
+Define
+========
 
-Enable Plugin
--------------
+Does a dictionary lookup to get a definition of a word.
 
-Enables a disabled plugin on the server the command is run in
+``-define <word>``
 
-.. code::
+Weather
+========
 
-  auttaja.disableplugin mod
+Returns the weather in a certain city.
 
-Disable Plugin
---------------
+``-weather <city/post(zip) code>``
 
-Disabled an enabled plugin on the server the command is run in
+Local Time
+========
 
-.. code::
+Returns the local time in a city.
 
-  auttaja.enableplugin mod
-
-Info
-----
-
-Displays info about the current running version of Auttaja, including a recent changelog
-
-.. code::
-
-  auttaja.info
-
-Custom Commands
-===============
-
-Allows you to add custom commands to Auttaja with custom responses.  Required Auttaja to have embed permissions to prevent @everyone and @here abuse.
-
-Add
----
-
-Adds a new custom command
-
-.. code::
-
-  custom.add cmdname | command content | help message
-  custom.add coolserverinfo | Visit our website! | Shows info about the server
-
-Remove
-------
-
-Removes a custom command
-
-.. code::
-
-  custom.remove coolserverinfo
-
-Deleted messages
-================
-
-The deleted messages plugin records deleted messages and allows you to retrieve a list
-
-Logs
-----
-
-Returns a text file containing the specified amount of deleted messages
-
-.. code::
-
-  deleted.logs 50
-  deleted.logs 1000
-
-Filters
-=======
-
-The filters plugin allows you to manage regular expression chat filters.
-
-Add
----
-
-Adds a regex filter to be applied to all messages on the servers
-
-.. code::
-
-  filter.add nigg[A-Za-z]*
-
-Remove
-------
-
-Removes a regex filter by ID, you can find the ID's in the list command
-
-.. code::
-
-  filter.remove 56
-
-List
-----
-
-List all current filters in the server
-
-.. code::
-
-  filter.list
-
-Gatekeeper
-==========
-
-Commands for controlling and configuring Gatekeeper, contains both verification and -agree functionality
-
-Enable
-------
-
-Enable Gatekeeper
-
-.. code::
-
-  gatekeeper.enable
-
-Disable
--------
-
-Disable Gatekeeper
-
-.. code::
-
-  gatekeeper.disable
-
-Toggle Mode
------------
-
-Toggles gatekeeper between agree and verification mode
-
-.. code::
-
-  gatekeeper.togglemode
-
-Set Member Role
----------------
-
-Sets a role for Gatekeeper to assign to users that pass verification
-
-.. code::
-
-  gatekeeper.memberrole Verified
-
-Set Guest Channel
------------------
-
-Allows you to set a guest channel to use instead of the one Auttaja creates.
-
-.. code::
-
-  gatekeeper.channel #guests
-
-Set Welcome Message
--------------------
-
-Sets a welcome message to be displayed after a user completes gatekeeper verification, requires the welcome channel to be set (see below).  #user# will be converted to a tag of the user, and #server# will be converted to your servers name.
-
-.. code::
-
-  gatekeeper.welcomemessage Hey #user#, welcome to #server#, please follow the rules.
-
-Set Welcome Channel
--------------------
-
-Sets the channel to print welcome messages to.
-
-.. code::
-
-  gatekeeper.welcomechannel #general
+``-localtime <city/post(zip) code>``
 
 Agree
------
+========
 
-Used only when Gatekeeper is in agree mode.  Causes the user to pass Gatekeeper.
+Agrees to the server guidelines and grants access to the server.
 
-.. code::
+``-agree``
 
-  gatekeeper.agree
+Approve
+========
 
-Verify
-------
+Approves a member and grants them access to the server.
 
-Used only when Gatekeeper is in verify mode.  Auttaja grants the user a new verification link.
+``-approve <member>``
 
-.. code::
+Welcome Test
+========
 
-  gatekeeper.verify
+Sends a test welcome message.
 
-Logging
-=======
+``-welcometest [mention]``
 
-The logging plugin is used to configure and control how and where Auttaja logs to
+Info
+========
 
-Toggle Join Leave
------------------
+Shows information about the bot.
 
-Toggles join/leave message on and off
+``-info``
 
-.. code::
+Help
+========
 
-  logging.togglejoinleave
+Lists all the commands and their syntax, or a single command if passed as an argument.
 
-Set Channel
------------
+``-help [command]``
 
-Sets the channel the Auttaja logs to
+Ping
+========
 
-.. code::
+Tests the response time between a message being sent in Discord and Auttaja handling it.
 
-  logging.setchannel #logging
+``-ping``
 
-Toggle Command Auditing
------------------------
+Role ID
+========
 
-Toggles whether or not commands run will be logged to the log channel
+Gets the ID of a role given by name.
 
-.. code::
+``-roleid <Role Name>``
 
-  logging.togglecmdaudit
+Invite
+========
 
-Moderation
-==========
+Returns an invite link for the bot.
 
-The moderation plugin contains all of the moderation commands Auttaja has to offer
+``-invite``
+
+Contributors
+========
+
+Lists everyone who has contributed to Auttaja.
+
+``-contributors``
+
+Server Info
+========
+
+Lists information about the current Discord server.
+
+``-serverinfo``
 
 Ban
----
+========
 
-Bans a user by tag, User#Discrim, or snowflake ID.  Can also be used to hackban people who aren't in the server by using the ID.
+Bans a user from a server.
 
-.. code::
-
-  mod.ban @Kyle2000
-  mod.ban Kyle2000#1009
-  mod.ban 337329813897347072
+``-ban <@user>``
 
 Kick
-----
+========
 
-Kicks a user from the server by tag, User#Discrim, or snowflake ID.
+Kicks a user from a server.
 
-.. code::
-
-  mod.kick @Kyle2000
-  mod.kick Kyle2000#1009
-  mod.kick 337329813897347072
+``-kick <@user>``
 
 Strike
-------
+========
 
-Gives the user a strike.  Strikes are essentially a warning and a note on their account you can lookup with `mod.search`
+Strikes a user from a server.
 
-.. code::
-
-  mod.strike @Kyle2000
-  mod.strike Kyle2000#1009
-  mod.strike 337329813897347072
-
-Reason
-------
-
-Adds a reason to a given punishment by punishment ID
-
-.. code::
-
-  mod.reason 342 Known raider, spamming gore
-
-Purge All
----------
-
-Purges the given number of messages from the channel, regardless of who sent them
-
-.. code::
-
-  mod.purgeall 20
-
-Purge
------
-
-Purges the given number of messages from the given member
-
-.. code::
-
-  mod.purge @Kyle2000 10
-
-Remove Punishment
------------------
-
-Marks a punishment as deleted, it will no longer show up in `mod.search`
-
-.. code::
-
-  mod.rmpunish 342
-
-Unban
------
-
-Unbans the given member
-
-.. code::
-
-  mod.unban @Tom#0131
-  mod.unban Tom#0131
-  mod.unban 188092131376758784
-
-Search
-------
-
-Lists all non-deleted punishments for the given user
-
-.. code::
-
-  mod.search @Tom#0131
-  mod.search Tom#0131
-  mod.search 188092131376758784
-
-Search All
-----------
-
-Lists all punishments, included deleted, for the given user
-
-.. code::
-
-  mod.searchall @Tom#0131
-  mod.searchall Tom#0131
-  mod.searchall 188092131376758784
-
-PunishInfo
-----------
-
-Lists all of the information for the given punishment
-
-.. code::
-
-  mod.punishinfo 342
+``-strike <@user>``
 
 Mute
-----
+========
 
-Mutes the given member by removing all of their roles, and giving them the spammer role.  Requires anti-spam to be enabled.
+Mutes a user from speaking in a server.
 
-.. code::
-
-  mod.mute @Tom#0131
-  mod.mute Tom#0131
-  mod.mute 188092131376758784
+``-mute <@user>``
 
 Unmute
-------
+========
 
-Unmutes the given member by removing the spammer role and returning their previous roles
+Unmutes a user from a server.
 
-.. code::
+``-unmute <@user>``
 
-  mod.unmute @Tom#0131
-  mod.unmute Tom#0131
-  mod.unmute 188092131376758784
+Reason
+========
 
-Pin
----
+Sets a reason for a punishment.
 
-Pins the given message to the current channel
-
-.. code::
-
-  mod.pin 382377051191115777
-
-Unpin
------
-
-Unpins the given message from the current channel
-
-.. code::
-
-  mod.unpin 382377051191115777
-
-Nicknames
-=========
-
-The nicknames plugin handles nickname change requests
-
-Request
--------
-
-Requests a nickname change
-
-.. code::
-
-  nick.request MyCoolNickname
-
-Cancel
-------
-
-Cancels a nick request by ID
-
-.. code::
-
-  nick.cancel 457
-
-Accept
-------
-
-Accepts a given nickname request by ID.  A back up for when Discord fails to send reaction notifications to Auttaja
-
-.. code::
-
-  nick.accept 457
-
-Deny
-----
-
-Denies a given nickname request by ID.  A back up for when Discord fails to send reaction notifications to Auttaja
-
-.. code::
-
-  nick.deny 457
-
-Permissions
-===========
-
-The permissions plugin is used to configure user, role, and command permissions
-
-Set User
---------
-
-Sets a users permission level
-
-.. code::
-
-  perm.setuser @Jet#0038 10
-
-Set Role
---------
-
-Sets a roles permission level
-
-.. code::
-
-  perm.setrole Moderator 6
-
-Set Command
------------
-
-Sets the required permission level for a command
-
-.. code::
-
-  perm.setcommand auttaja.help 1
-
-Vote
-====
-
-The vote plugin introduces a democratic voting system, where a user can call a vote, and people vote on the topic using reactions.  You can specify which users are included in the vote by tagging them individually or by roles.  Once the vote is complete, a PDF is generated with the results and posted into the channel of your choice.
-
-Call
-----
-
-Calls a vote
-
-.. code::
-
-  vote.call
-
-End
----
-
-Ends a vote, must be done in the channel created specifically for that vote
-
-.. code::
-
-  vote.end
-
-Wikipedia
-=========
-
-The wikipedia plugin allows you to query wikipedia for articles, and returns a short summary of the article
+``-reason <id> <reason>``
 
 Search
-------
+========
 
-Search for a term on wikipedia and return the first result.  Won't return anything if the term is too ambiguous
+Searches a user for punishments.
 
-.. code::
+``-search <user>``
 
-  wiki.search discord app
+Purge
+========
+
+Deletes messages from a user.
+
+``-purge <user> <number of messages>``
+
+Pin
+========
+
+Pins a message to the channel.
+
+``-pin <message id>``
+
+Unpin
+========
+
+Unpins a message from the channel.
+
+``-unpin <message id>``
+
+Punish Info
+========
+
+Gives info about a punishment that a user recieved.
+
+``-punishinfo <id>``
+
+Purge All
+========
+
+Deletes a certain amount of messages in a server.
+
+``-purgeall <number of messages>``
+
+Remove Punishment
+========
+
+Removes a punishment from a user.
+
+``-rmpunish <id> <reason>``
+
+Search All
+========
+
+Searches all punishments, including deleted ones.
+
+``-searchall <user|none>``
+
+Profile
+========
+
+Returns account information for the user.
+
+``-profile <user>``
+
+Nick
+========
+
+Requests a change to your nickname.
+
+``-nick <nickname>``
+
+Osu!
+========
+
+Fetches information from the osu! API. The sub commands you can currently use are `getuser` or `getrecent`.
+
+``-osu subcommand args``
+
+Attach Permissions
+========
+
+Assigns a role to a specific perm group: `User`, `Moderation`, `Admin`, and `Owner`.
+
+``-attachperm PermGroup RoleName``
+
+Detach Permissions
+========
+
+Detaches a role from a specific perm group: `User`, `Moderation`, `Admin`, and `Owner`.
+
+``-detachperm PermGroup RoleName``
+
+Twitter Authorization
+========
+
+Allows Auttaja to allow you to use Twitter using commands.
+
+``-tauth``
+
+Twitter Pin
+========
+
+This completes the twitter authorization process by telling me the OAuth2 pin code.
+
+``-tpin <pincode>``
+
+Test Tweet
+========
+
+Sends a test tweet through Auttaja.
+
+``-ttest``
+
+Twitter Post
+========
+
+Update your twitter status.
+
+``-tpost <status update>``
+
+Twitter Deauthorization
+========
+
+Wipes your authorization from our database.
+
+``-tdeauth``
+
+Move All
+========
+
+Moves everyone from the current voice channel to the specified channel.
+
+``-moveall <channelid>``
+
+Call Vote
+========
+
+Calls a vote (maximum is 10 options).
+
+``-callvote name | topic | mentions | option 1 | option 2 ...``
+
+End Vote
+========
+
+Ends a vote.
+
+``-endvote <channel>``
