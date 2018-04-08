@@ -15,6 +15,7 @@ Contents:
 
    getting-started
    commands
+   setup
 
 
 Search
