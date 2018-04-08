@@ -365,7 +365,7 @@ Sets the channel of where to log deleted and edit messages.
 
 Logs more info on messages, and users.
 
-**WARNING: Enabling this feature you agree to allow this bot to record and log additional information about messages, including the content, edited revision history, and attachment datafor up to a months time.
+**WARNING: Enabling this feature, you agree to allow this bot to record and log additional information about messages, including the content, edited revision history, and attachment data for up to a months time.
 You also agree that we will not remove individual messages from the DB upon request unless you can provide us with the message ID.**
 
 ------
