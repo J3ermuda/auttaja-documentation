@@ -217,6 +217,17 @@ This plugins allows the bot to detect if raiders are joining the server, and if 
 
 *If 3 or more users join within a 5 second period, they are muted by the bot*
 
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/master/images/automod/automod_antinuke.png
+  :height: 10px
+  
+**Anti Nuke Plugin**
+
+This plugin will watch for abusive admins and will delete their roles if detected.
+
+**Example:**
+
+*If an admin bans people 5 people within 10 seconds, his admin privlages will be gone*
+
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_antishortner.png
   :height: 10px
   
@@ -239,6 +250,13 @@ This plugin allows the bot to detect unsafe links that might be backdoors.
 
 *grabify.link*
 
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/automod/automod_anti_mention_toggle.png
+  :height: 10px
+
+**Anti Mention Spam Plugin**
+
+Toggles the mention spam plugin, and prompts you to say a certain amount of message, before the spammer recieves a disiplinary action.
+
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/automod/automod_spammer_role.png
   :height: 10px
   
@@ -256,6 +274,28 @@ This allows you to set the muted, or spammer role to a different role.
 This sets the Auttaja Bypass role where once you have this role, you can bypass all plugins, and moderation commands
 
 *The default is Auttaja Bypass, but you can change it by putting in the name, or the role ID of the role*
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/automod/automod_anti_mention_threshold.png
+  :height: 10px
+  
+**Anti Mention Spam Threshold**
+
+Allows you to select a certain amount of mentions before the bot detects the mentions as spam.
+
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/automod/automod_anti_mention_action.png
+  :height: 10px
+  
+**Anti Mention Spam Action**
+
+Sets the action/punishment of a user who spams mentions.
+
+*Actions:*
+
+-Ban
+-Kick
+-Mute
+-Strike
 
 ------
 Logging
@@ -301,6 +341,30 @@ Toggles audit commands where it will log every command typed by a user.
 
 Logs whether someone joins and/or leaves.
 
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_deleted_edited_messages.png
+  :height: 10px
+
+**Deleted/Edited Message Logging**
+
+Logs edited and deleted messages
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_deleted_edited_channel.png
+  :height: 10px
+  
+**Deleted/Edited Message Log Channel**
+
+Sets the channel of where to log deleted and edit messages.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_advanced.png
+  :height: 10px
+  
+**Advanced Logging**
+
+Logs more info on messages, and users.
+
+**WARNING: Enabling this feature you agree to allow this bot to record and log additional information about messages, including the content, edited revision history, and attachment datafor up to a months time.
+You also agree that we will not remove individual messages from the DB upon request unless you can provide us with the message ID.**
+
 ------
 Nick Change Requests
 ------
@@ -339,3 +403,10 @@ These are some general settings that you can use with Auttaja.
 **Set Prefix**
 
 This allows you to change the prefix to whatever you desire.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/general/general_autodelete.png
+  :height: 10px
+  
+**Auto Delete**
+
+Toggles auto deletion of responses.
