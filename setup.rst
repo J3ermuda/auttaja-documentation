@@ -293,8 +293,11 @@ Sets the action/punishment of a user who spams mentions.
 *Actions:*
 
 -Ban
+
 -Kick
+
 -Mute
+
 -Strike
 
 ------
