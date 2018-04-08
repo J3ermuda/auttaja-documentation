@@ -24,7 +24,7 @@ Most of the configuration in Auttaja is done through the setup command.  Running
 Permissions
 -----------
 
-Permissions are handled by a role based system.  We split commands into 5 command groups.  Everyone, Moderation, Admin, Owner, and Helper.  You only need to be concern with the former 4 options.  You can assign roles in your server to each of the 4 command groups.  Having access to a specific command group will give you access to all commands in that group and the ones under that.  For example, if someone has a role that is attached to the Admin group, they will have access to commands in the Everyone, Moderation, and Admin groups.
+Permissions are handled by a role based system.  We split commands into 5 command groups.  Everyone, Helper, Moderation, Admin, Owner, and Helper.  You only need to be concern with the former 4 options.  You can assign roles in your server to each of the 4 command groups.  Having access to a specific command group will give you access to all commands in that group and the ones under that.  For example, if someone has a role that is attached to the Admin group, they will have access to commands in the Everyone, Moderation, and Admin groups.
 
 You can use the `-attachperm` command to start assigning roles in your server to command groups.  For example, if you had a role called "Moderators", you could assign them to the Moderation group by running `-attachperm Moderation Moderators`.
 
