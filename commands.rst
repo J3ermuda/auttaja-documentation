@@ -74,6 +74,13 @@ Allows you to self-assign a role that has previously been set as self-assignable
 
 ``-assignrole role``
 
+Un-assign Role
+========
+
+Allows you to un-assign a role that you previously assigned to yourself.
+
+``-unassignrole role``
+
 Enable Command
 ========
 
@@ -108,6 +115,13 @@ List Commands
 Lists all possible custom commands that the user has created for the guild.
 
 ``-listcommands``
+
+Command Colour
+========
+
+Sets the colour of a custom command embed.
+
+``-commandcolour <command> <colour>``
 
 Add Filter
 ========
@@ -346,6 +360,13 @@ Profile
 Returns account information for the user.
 
 ``-profile <user>``
+
+Lookup
+========
+
+Returns information about a Discord invite code
+
+``-lookup <invite code | invite url>``
 
 Nick
 ========
