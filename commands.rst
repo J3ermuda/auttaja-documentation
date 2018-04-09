@@ -263,6 +263,13 @@ Bans a user from a server.
 
 ``-ban <@user>``
 
+Multi Ban
+========
+
+Bans a list of users from the server by mention or user ID
+
+``-multiban <@user> <userid> <@user> ... <reason>
+
 Kick
 ========
 
