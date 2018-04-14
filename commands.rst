@@ -242,6 +242,13 @@ Lists everyone who has contributed to Auttaja.
 
 ``-contributors``
 
+Snapshot
+========
+
+Create a sharable snapshot of the last <number> messages in the current channel. **Requires advanced message logging.**
+
+``-snapshot <number>``
+
 Server Info
 ========
 
@@ -374,6 +381,13 @@ Lookup
 Returns information about a Discord invite code
 
 ``-lookup <invite code | invite url>``
+
+Log Reason
+========
+
+Changes a mod-log reason by ID
+
+``-logreason <id> <new reason>``
 
 Nick
 ========
