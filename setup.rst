@@ -309,6 +309,9 @@ Logging
   
 Logging in Auttaja allows you to log all punishments, joins/leaves, and messages detected by any of our moderation features, as well as audit logs of all Auttaja commands run.
 
+General Logging
+========
+
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_toggle.png
   :height: 10px
   
@@ -323,19 +326,22 @@ Toggles basic logging, *such as punishments, joins/leaves, and any messages dete
 
 Sets the channel of where to log everything.
 
-.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_joinchannel.png
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_invite_logging.png
+  :height: 10px
+
+**Invite Logging Toggle**
+
+Sets whether to log invite use.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_invite_channel.png
   :height: 10px
   
-**Join Channel**
+**Invite Logging Channel**
 
-Sets the channel of where to log join messages.
+Sets the channel to log invite use to.
 
-.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_audit.png
-  :height: 10px
-  
-**Audit Commands**
-
-Toggles audit commands where it will log every command typed by a user.
+Join/Leave Logging
+========
 
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_join_leave_messages.png
   :height: 10px
@@ -343,6 +349,16 @@ Toggles audit commands where it will log every command typed by a user.
 **Join/Leave Message Logging**
 
 Logs whether someone joins and/or leaves.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_joinchannel.png
+  :height: 10px
+  
+**Join Channel**
+
+Sets the channel of where to log join messages.
+
+Message Logging
+========
 
 .. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_deleted_edited_messages.png
   :height: 10px
@@ -369,6 +385,38 @@ Logs more info on messages, and users.
 You also agree that we will not remove individual messages from the DB upon request unless you can provide us with the message ID.**
 
 *If you agree, type* `yes` *in chat once you enable the advanced logging*
+
+Modlogs
+========
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_modlogs_toggle.png
+  :height: 10px
+  
+**Mod-log Messages**
+
+Toggle mog-log messages.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_advanced.png
+  :height: 10px
+  
+**Mod-logs Channel**
+
+Sets the mod-logs channel.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/Meow2004-patch-1/images/logging/logging_audit.png
+  :height: 10px
+  
+**Private Audit Commands**
+
+Toggles audit commands where it will log every command typed by a user.
+
+.. image:: https://github.com/Kelwing/auttaja-documentation/blob/new-stuff/images/logging/logging_advanced.png
+  :height: 10px
+  
+**Private Audits Channel**
+
+Sets the mod-logs channel.
+
 ------
 Nick Change Requests
 ------
